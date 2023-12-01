@@ -1,3 +1,5 @@
-# AlgoCasts
+# Algo Cast JS
 
-Companion repo to [The Coding Inteview Bootcamp: Algorithms + Data Structures](https://www.udemy.com/course/coding-interview-bootcamp-algorithms-and-data-structure/)
+### Run the tests for a specific exercise
+
+`e.g.: jest fizzbuzz/test.js --watch`
