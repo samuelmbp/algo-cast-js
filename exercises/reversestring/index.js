@@ -33,7 +33,8 @@ function reverse(str) {
   // return str.split("").reverse().join("");
 
   // ============== Option Four ==============
-  return str.split("").reduce((prev, curr) => curr + prev);
+  // debugger;
+  return str.split("").reduce((prev, curr) => curr + prev, "");
 }
 
 const reversedString = reverse("apple");
