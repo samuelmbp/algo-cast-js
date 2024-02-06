@@ -17,18 +17,12 @@ function maxChar(str) {
      */
 
     const charCount = {};
-    for (let i = 0; i < str.length; i++) {
-        const char = str[i];
-
-        if (charCount[char]) {
-            charCount[char]++;
-        } else {
-            charCount[char] = 1;
-        }
-    }
-
     let charWithHighestValue = 0;
     let mostRepeatedChar = "";
+
+    for (let char of str) {
+        charCount[char] ? charCount[char]++ : (charCount[char] = 1);
+    }
 
     for (let char in charCount) {
         if (charCount[char] > charWithHighestValue) {
